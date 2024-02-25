@@ -4,6 +4,14 @@ html,body{
     font-family: Mada;
 }
 
+a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
 #check{
     display: none;
 }
@@ -81,8 +89,8 @@ html,body{
 
 .logo{
     display: flex;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid white;
@@ -123,19 +131,21 @@ html,body{
 
 #check:checked ~ .navbar > .navbar-style > .navbar-left{
     transform: translateX(0);
+    box-shadow: 100px 20px 100px 10px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-left{
     display: flex;
     position: fixed;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    top: 80px;
+    top: 81px;
     left: -20px;
     justify-content: space-evenly;
     background-color: #07509d;
+    border-right: 1px solid white;
     width: 50%;
-    height: 90vh;
+    height: 95%;
     transform: translateX(-100%);
     transition: all 0.30s;
 }
