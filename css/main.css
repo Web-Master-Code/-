@@ -10,7 +10,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: white;
     margin-top: 150px;
     gap: 50px;
 }
@@ -19,6 +18,7 @@
     display: flex;
     font-family: Changa;
     font-size: 50px;
+    color: white;
     width: 510px;
 }
 
@@ -37,6 +37,7 @@
     align-items: center;
     width: 80%;
     height: auto;
+    gap: 20px;
     margin-top: 120px;
 }
 
@@ -49,12 +50,15 @@
     gap: 20px;
     color: white;
     width: 250px;
+    border-radius: 20px;
     padding: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
     height: 250px;
 }
 
 .card1{
-    background-color: #f1bd2d;
+    background-color: #FFF;
+    color: #07509d;
 }
 
 .card2{
@@ -82,7 +86,9 @@
 
 .container3-text{
     display: flex;
+    font-family: Changa;
     font-size: 30px;
+    color: white;
 }
 
 .cards{
@@ -90,7 +96,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 40px;
 }
 
 .container3-cards{
@@ -100,9 +106,10 @@
     align-items: center;
     gap: 10px;
     width: 400px;
-    background-color: #DDDDDD;
-    border-radius: 10px;
-    padding: 20px;
+    padding-bottom: 15px;
+    background-color: #FFF;
+    color: rgb(40, 40, 40);
+    border-radius: 15px;
 }
 
 .calander-pos{
@@ -118,7 +125,7 @@
 }
 
 .container3-card-img{
-    border-radius: 10px;
+    border-radius: 13px;
 }
 
 .container3-text2{
@@ -127,6 +134,52 @@
     width: fit-content;
 }
 
+
+.container4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    gap: 20px;
+}
+
+.container4-text{
+    display: flex;
+    font-family: Changa;
+    font-size: 30px;
+    color: white;
+}
+
+.goals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 20px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 280px;
+    height: 200px;
+    font-size: 20px;
+    color: #07509d;
+    gap: 10px;
+}
+
+.container4-img{
+    width: 60px;
+}
 
 
 
@@ -155,12 +208,16 @@
     gap: 10px;
     width: 300px;
     background-color: #DDDDDD;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 15px;
+    padding-bottom: 20px;
 }
 
 .container3-cards > img{
-    width: 280px;
+    width: 300px; 
+}
+
+.container3-text2{
+    width: 290px;
 }
 
 }
