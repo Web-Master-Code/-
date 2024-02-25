@@ -1,0 +1,165 @@
+html,body{
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: Mada;
+}
+
+#check{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-style{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #07509d;
+    border-bottom: 2px solid white;
+}
+
+.m-c-pos{
+    display: none;
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: 20px;
+}
+
+.text-position{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.navbar-text{
+    display: flex;
+    font-size: 20px;
+    color: white;
+    font-family: Changa;
+    cursor: pointer;
+}
+
+.navbar-text:hover ~ .text-underline{
+    width: 100%;
+}
+
+.text-underline{
+    display: flex;
+    width: 0;
+    height: 3px;
+    background-color: #f1bd2d;
+    border-radius: 20px;
+    transition: 0.50s all;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.logo-text{
+    display: flex;
+    font-family: Changa;
+    font-size: 26px;
+    color: white;
+}
+
+.logo{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+
+
+
+
+
+@media (max-width: 900px) {
+    
+.m-c-pos{
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+}
+
+.img-m,.img-c{
+    display: flex;
+    width: 45px;
+    cursor: pointer;
+    transition: 0.30s all;
+}
+
+.img-c{
+    opacity: 0;
+    position: absolute;
+}
+
+#check:checked ~ .navbar > .navbar-style > .m-c-pos > .img-m{
+    opacity: 0;
+}
+
+#check:checked ~ .navbar > .navbar-style > .m-c-pos > .img-c{
+    opacity: 1;
+}
+
+#check:checked ~ .navbar > .navbar-style > .navbar-left{
+    transform: translateX(0);
+}
+
+.navbar-left{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    top: 80px;
+    left: -20px;
+    justify-content: space-evenly;
+    background-color: #07509d;
+    width: 50%;
+    height: 90vh;
+    transform: translateX(-100%);
+    transition: all 0.30s;
+}
+
+}
+
+
+@media (max-width: 500px) {
+    
+.navbar-right{
+    gap:10px;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+.logo-text{
+    font-size: 20px;
+}
+
+.img-c,.img-m{
+    width: 40px;
+}
+
+}
